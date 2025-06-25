@@ -1,4 +1,4 @@
-import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm'
+  import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm'
 
 const supabase = createClient(
     "https://kwjjrtfukjybwqwdequl.supabase.co",
@@ -7,10 +7,11 @@ const supabase = createClient(
 
   async function simpan() {
     const name = document.getElementById("name").value;
-    const {data, error} = await supabase.from("testing").insert([{name}])
+    const jenis_kelamin = document.getElementById("jenis_kelamin").value;
+    const {data, error} = await supabase.from("testing").insert([{name,jenis_kelamin}])
 
     if(error) return alert("Data gagal ditambahkan")
         alert("Data berhasil di tambahkan")
   }
 
-  window.simpan = simpan;
+  window.simpan = simpan
