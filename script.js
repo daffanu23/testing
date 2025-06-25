@@ -1,4 +1,4 @@
-  import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm'
+import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm'
 
 const supabase = createClient(
     "https://kwjjrtfukjybwqwdequl.supabase.co",
@@ -13,4 +13,4 @@ const supabase = createClient(
         alert("Data berhasil di tambahkan")
   }
 
-  window.simpan = simpan
+  window.simpan = simpan;
