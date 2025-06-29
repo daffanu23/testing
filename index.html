@@ -1,20 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Testing</title>
+    <title>Klasemen Pembalap</title>
+    <style>
+        /* Anda bisa menggunakan styling ini agar tampilan lebih rapi */
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background-color: #f4f4f9; color: #333; margin: 0; padding: 20px; }
+        h1 { text-align: center; color: #1a1a2e; }
+        table { width: 100%; max-width: 850px; border-collapse: collapse; margin: 25px auto; box-shadow: 0 4px 20px rgba(0,0,0,0.1); background-color: white; border-radius: 8px; overflow: hidden; }
+        th, td { border-bottom: 1px solid #ddd; padding: 12px 15px; text-align: left; }
+        thead { background-color: #1a1a2e; color: white; }
+        tr:nth-child(even) { background-color: #f9f9f9; }
+        tr:hover { background-color: #f1f1f1; }
+        .loading, .error { text-align: center; font-size: 1.2em; color: #777; padding: 20px; }
+    </style>
 </head>
 <body>
-    <label for="">Nama</label>
-    <input type="text" id="name" placeholder="Masukkan nama anda">
-    <select name="" id="jenis_kelamin">
-        <option value="" disabled selected>pilih jenis kelamin anda</option>
-        <option value="laki-laki">laki-laki</option>
-        <option value="perempuan">perempuan</option>
-    </select>
-    <button onclick="simpan()">simpan</button>
+
+    <h1>Klasemen Pembalap</h1>
+
+    <div id="klasemen-container">
+        <p class="loading">Memuat data klasemen...</p>
+    </div>
 
     <script type="module" src="script.js"></script>
+
 </body>
 </html>
